@@ -15,7 +15,7 @@ nav{ z-index: 3; position: fixed; top: 0; border-bottom: 1px solid #eee; backgro
 .logo img{ display: block;width: 100%; }
 
 .burger,.close{ display: none; cursor: pointer; position: fixed; top: 15px; right: 10px; z-index: 999; padding: 15px;transition: 0.2s all; display: none; }
-.burger li{ background: #000; display:block; height:2px; width: 20px; margin-bottom: 5px;transition: 0.2s all;  }
+.burger li{ background: #000; border-radius: 2px; display:block; height:2px; width: 20px; margin-bottom: 5px;transition: 0.2s all;  }
 .close li{ background: #fff; display:block; height:2px; width: 22px; margin-bottom: 5px;transition: 0.2s all;  }
 .close li:first-child{ transform: rotate(43deg); margin-top: 6px; background: #fff;}
 .close li:nth-child(2){ transform: rotate(-43deg); margin-top: -7px; background: #fff}
@@ -27,9 +27,9 @@ nav{ z-index: 3; position: fixed; top: 0; border-bottom: 1px solid #eee; backgro
 .social_media li a svg{ display: block; color: #000; fill: currentColor; }
 
 
-.menu{ text-align: center;  height: 63px; width: 420px; margin-right: 30px; display: flex; align-items: center; justify-content: center; }
-.menu li{ flex: 1; margin:0 23px;height:  63px;}
-.menu li a{ height: 63px; line-height: 63px; display: block; font-size: 14px; text-decoration: none; }
+.menu{ text-align: center;  height: 63px; width: 400px; margin-right: 30px; display: flex; align-items: center; justify-content: center; }
+.menu li{ flex: 1; margin:0 10px;height:  63px;}
+.menu li a{ height: 62px; line-height: 62px; display: block; font-size: 14px; text-decoration: none; border-bottom: 2px solid #fff; transition: 0.3s all; }
 .menu li:hover a{  cursor: pointer; border-bottom: 2px solid #000; }
 
 footer{ position: relative; bottom: 0; padding: 20px 10% 100px 10%; display: flex; align-items: center; justify-content: space-between; }
@@ -40,7 +40,7 @@ footer .bon_group li a{ color: #999; display: block; padding: 0 10px; font-size:
 footer .bon_group li a:hover{ text-decoration: none; }
 footer p.copyright{ position: absolute; bottom: 20px; text-align: center; width: 80%; font-size: 12px; }
 
-main.home{ display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 63px; z-index: 1 }
+main.home{ display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 0px; z-index: 1 }
 section.vr_promote{ width: 100%; background: #999; margin-bottom: 20px; overflow: hidden; }
 .vertical_line{ height: 80px; width: 1px; background: #999; margin: 20px auto 0; }
 .vr_now h3{ text-align: center; line-height: 5em;font-size: 30px; margin-bottom: 30px; }
@@ -53,6 +53,11 @@ button.slick-arrow{position: absolute; border:0; background: 0; text-indent: -99
 button.slick-prev{  background: url('../images/arrow-prev.svg') no-repeat; }
 button.slick-next{ right: -5vw; left: initial; background: url('../images/arrow-next.svg') no-repeat; }
 .project_description{ display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3; -webkit-box-orient: vertical; line-height: 1.5em; max-height: 4.5em; color: #333;  }
+
+.vr_promote_block{ position: absolute; z-index: 2; top: 100px; right: 30px; color: #000;}
+.vr_promote_block h1{background: #fff; font-size: 18px; font-weight: normal; text-align: right; padding: 10px; margin-bottom: 8px; }
+.vr_promote_block .btn{ transition: 0.3s all; display: block; text-decoration: none; color: #000; background: #fff; font-size: 12px; font-weight: normal; text-align: right; padding: 10px; float: right;  }
+.vr_promote_block .btn:hover{ text-decoration: underline; padding:10px 20px; }
 
 /*Project List*/
 main.project_list_wrap{ margin-top: 93px;   }
@@ -104,7 +109,17 @@ ul.project_switch li:last-child{  position: relative; right: 0; text-align: righ
 ul.project_switch li:first-child:hover{ opacity: 1; left: -10px; }
 ul.project_switch li:last-child:hover{ opacity: 1; right: -10px; }
 
-
+/*HeadRoom*/
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
 
 @media only screen and (max-width: 1024px) {
 	.people_box .people_img{ width: 300px;  padding-top: 300px; }
@@ -128,6 +143,7 @@ ul.project_switch li:last-child:hover{ opacity: 1; right: -10px; }
 	.menu{ display: flex;position: fixed;  width: 100%; padding-bottom: 20px; height: 100vh; top: 0; left: 0; background: #292929; flex-direction: column; justify-content: center;}
 	.menu li { flex: initial;height: 80px; margin-right: 40px; }
 	.menu li a{ color: #fff; font-size: 30px; height: 80px; line-height: 80px; }
+	main.home{ margin-top: 63px; }
 	.people_box{ flex-direction: column; align-items: center; justify-content: center; }
 	.people_box .people_img{ height: 0; width: 300px; padding-top: 300px;}
 	.people_box .people_info{ width: 300px; }
