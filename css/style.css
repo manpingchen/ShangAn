@@ -141,7 +141,7 @@ ul.project_switch li:last-child:hover{ opacity: 1; right: -10px; }
 	.burger.active li{background: #fff; }
 	.menu_wrap{position: fixed; display: none; width: 100%; height: 100vh; }
 	.menu{ display: flex;position: fixed;  width: 100%; padding-bottom: 20px; height: 100vh; top: 0; left: 0; background: #000; flex-direction: column; justify-content: center;}
-	.menu li { flex: initial;height: 80px; margin-right: 40px; }
+	.menu li { flex: initial;height: 80px;  }
 	.menu li a{ color: #fff; font-size: 30px; height: 80px; line-height: 80px; border: none; }
 	main.home{ margin-top: 63px; }
 	.people_box{ flex-direction: column; align-items: center; justify-content: center; }
