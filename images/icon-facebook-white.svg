@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>/svg/icon-facebook-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M22.6755,0 L1.3245,0 C0.5925,0 0,0.5925 0,1.3245 L0,22.6755 C0,23.4075 0.5925,24 1.3245,24 L12.819,24 L12.819,14.706 L9.69,14.706 L9.69,11.085 L12.819,11.085 L12.819,8.4105 C12.819,5.3115 14.712,3.6255 17.478,3.6255 C18.8025,3.6255 19.941,3.7215 20.2725,3.7665 L20.2725,7.0065 L18.3525,7.0065 C16.8525,7.0065 16.56,7.7265 16.56,8.7765 L16.56,11.0865 L20.145,11.0865 L19.68,14.7165 L16.56,14.7165 L16.56,24 L22.6755,24 C23.4075,24 24,23.4075 24,22.6755 L24,1.3245 C24,0.5925 23.4075,0 22.6755,0" id="path-1"></path>
+    </defs>
+    <g id="About" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="about_01a" transform="translate(-1117.000000, -4718.000000)">
+            <g id="social" transform="translate(0.000000, 3966.000000)">
+                <g id="twitter-area" transform="translate(885.000000, 0.000000)">
+                    <g id="social-links" transform="translate(160.500000, 764.000000) rotate(90.000000) translate(-160.500000, -764.000000) translate(148.500000, 667.500000)">
+                        <g id="icon/facebook" transform="translate(12.000000, 12.753123) rotate(-90.000000) translate(-12.000000, -12.753123) translate(0.000000, 0.753123)">
+                            <g id="icon">
+                                <rect id="wrapper" fill-opacity="0" fill="#3498DB" x="0" y="0" width="24" height="24"></rect>
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="icon-facebook"></g>
+                                <g id="mixin/fill/white" mask="url(#mask-2)" fill="#FFFFFF">
+                                    <rect id="chip" x="0" y="0" width="24" height="24"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
