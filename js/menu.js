@@ -6,23 +6,16 @@ $(function () {
 	var toggle = $(".burger");
 	var close = $(".close");
 	var HeadroomNav = document.querySelector("nav");
-	var headroom  = new Headroom(HeadroomNav);// 创建 Headroom 对象，将页面元素传递进去
-	
+	var headroom = new Headroom(HeadroomNav); // 创建 Headroom 对象，将页面元素传递进去
 
-	
 	clickBinding(); // binding click functions for toogle, menu and close 
 	toggleMenu(); // trigger toggleMenu function once at beginning
-	// 初始化
-	headroom.init(); 
-	$("nav").headroom("destroy");
-	
+
+	headroom.init(); // 初始化
+
 	$(window).on('resize', function () {
 		toggleMenu(); // trigger toggleMenu function when window resizing
 	});
-	
-
-	
-		
 
 	function toggleMenu() {
 		isLargeWindow = $(window).width() > winSize;
@@ -57,5 +50,5 @@ $(function () {
 			toggle.fadeIn(200);
 		});
 	}
-	
+
 });
